@@ -1,0 +1,9 @@
+* {color:white; font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1578922427288-a47338083a57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=341&q=80"); 
+    background-repeat: no-repeat;
+    background-size: 2000px 6500px;
+}
+h1 {font-size:4em;color:wheat;font-weight:bold}
+h2 {font-size:2em; color:wheat;background-color:rgba(0, 0, 0, 0.336)}

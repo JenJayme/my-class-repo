@@ -1,0 +1,45 @@
+.h1 {   
+    font-family: 'Metal Mania', cursive;
+    font-size: 24px;
+    font-weight: thick;
+    line-height: 150%;
+}
+
+.h3 {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Sriracha', cursive;
+    Background-color: black;
+    color: wheat;
+    font-weight: thick;
+    line-height: 150%;
+}
+
+.h4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    color: purple;
+}
+
+.body1 {
+    font-size: 16px;
+    font-family: 'Sriracha', cursive;
+    font-weight: thick;
+    line-height: 24px;
+    color: blue;
+}
+
+.body2 {
+    font-size: 24px;
+    font-family: 'Sriracha', cursive;
+    line-height: 24px;
+    font-weight: normal;
+    color: green;
+}
+.body3 {
+    font-size: 16px;
+    font-family: 'Sriracha', cursive;
+    font-weight: normal;
+    line-height: 50px;
+    color: purple;
+}

@@ -1,0 +1,11 @@
+* {font-family:Verdana, Geneva, Tahoma, sans-serif}
+.centered {text-align:center;}
+.red-text {color:red}
+.blue-text {color:#0000ff}
+.green-text {color:rgb(33, 221, 33)}
+.big-font {font-size:26px}
+.tiny-font {font-size:10px}
+.bold {font-weight:bold}
+.impact {font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
+.bob {font-size:30px; color:orange; font-weight:bold}
+.styledFont {font-family:Georgia, 'Times New Roman', Times, serif; font-style:italic; color:purple; font-size:16px}
