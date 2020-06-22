@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+<script>
+    document.body.style.backgroundImage = "url('Hal.jpg')"
+
+    // Step 1: Define the array Rock Paper Scissors. var options (r p s)--> 
+
+    var options = ['r', 'p', 's'];
+    var userScore = 0;
+    var halScore = 0;
+
+    // Step 2: Prompt the user to select an option from the array. Can we make this multiple choice?. 
+    
+    alert("Are you ready to play Rock, Paper, Scissors?");
+
+    for (var round = 1; round < 4; round++) {
+
+        userChoice = prompt('Round ' + round + ':\nType "r", "p", or "s" to choose rock, paper, or scissors.');
+
+        while (userChoice != 'r' && userChoice != 'p' && userChoice != 's') {
+            userChoice = prompt('You did not make a valid choice. Enter "r", "p", or "s".')
+        }
+
+        // Step 5: Have computer randomly select an option.
+
+        halChoiceIndex = Math.floor(Math.random() * 3);
+
+        // console.log(halChoiceIndex)
+        
+        halChoice = options[halChoiceIndex]
+
+        // console.log(halChoice)
+        
+        // Step 6: Compare user choice to computer choice. 
+        // Step 7: If/Else statements to generate alerts "User won!" "Hal won!" "You tied!".  If User and Hal are equal alert "You tied!" Else 
+        
+        // * If user picks rock and if computer picks scissors then user wins.
+        if (userChoice === 'r' && halChoice === 's') {
+            alert("Hal picks 's'. You win!");
+            userScore = userScore + 1;
+        }
+
+        // * If user picks rock and if computer picks paper then user loses.
+        if (userChoice === 'r' && halChoice === 'p') {
+            alert("Hal picks 'p'. You lose!");
+            halScore = halScore + 1;
+        }
+
+        // * If user picks scissors and if computer picks rock then user loses.
+        if (userChoice === 's' && halChoice === 'r') {
+            alert("Hal picks 'r'. You lose!");
+            halScore = halScore + 1;
+
+        }
+
+        // * If user picks scissors and if computer picks paper then user wins.
+        if (userChoice === 's' && halChoice === 'p') {
+            alert("Hal picks 'p'. You win!");
+            userScore = userScore + 1;
+        }
+
+        // * If user picks paper and if computer picks rock then user wins.
+        if (userChoice === 'p' && halChoice === 'r') {
+            alert("Hal picks 'r'. You win!");
+            userScore = userScore + 1;
+        }
+
+        // * If user picks paper and if computer picks scissors then user loses.
+        if (userChoice === 'p' && halChoice === 's') {
+            alert("Hal picks 's'. You lose!");
+            halScore = halScore + 1;
+
+        }
+
+        // * If user picks the same as computer then they tie. 
+        if (userChoice === halChoice) {
+            alert("Hal picks '" + halChoice + "'. You tie!");
+        }
+
+    }
+    
+    // Compare final scores
+
+    if (userScore === halScore) {
+        var message = "You tied with Hal!";
+    }
+    else if (userScore > halScore) {
+        var message = "You won! Go humans!";
+    }
+    else {
+        var message = "Sorry, Hal won.";
+    }
+
+    alert("Your final score is " + userScore + ". Hal's final score is " + halScore + ". " + message);
+    document.write(message);
+
+</script>
+
+</body>
+</html>

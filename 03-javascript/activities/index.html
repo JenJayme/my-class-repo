@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOT Question Game</title>
+</head>
+<body>
+    <script>
+        // Define variables:
+        // question-answer array with 10 questions and answers
+        var gotQuizKey = [
+            { q: "Is Daenerys Targaryen the Mother of Dragons?", a: true },
+            { q: "Does Tyrion Lannister drink?", a: true },
+            { q: "Does Tyrion Lannister know things?", a: true },
+            { q: "Does Jon Snow know anything?", a: false },
+            { q: "Is Jaime Lannister secretly dating his sister?", a: true },
+            { q: "Does a girl have a name?", a: false },
+            { q: "Does Theon Greyjoy keep all his body parts?", a: false },
+            { q: "Is Khal Drogo manly?", a: true },
+            { q: "Is Viserys Targaryen 'the dragon'?", a: false },
+            { q: "Is Joffrey a little twit?", a: true }
+        ]
+        // create userAnswer variable
+        var userAnswer;
+        // userScore -- initialize to zero
+        var userScore = 0;
+        // ending message
+        var message;
+
+        // Introduce game
+        alert("Welcome to Sierra and Jen's Game of Thrones quiz! Click OK for Yes and Cancel for No.");
+
+        // Loop through question-answer pairs 10x
+        for (var i = 0; i < gotQuizKey.length; i++) {
+            // Confirm to ask user questions, saving value at userAnswer
+            userAnswer = confirm(gotQuizKey[i]['q'])
+            // Compare userAnswer to correct answer
+            if (userAnswer === gotQuizKey[i]['a']) {
+                // Update the score (+1 if correct)
+                userScore++;
+                // Alert user Correct or Nope
+                alert("Correct!")
+            }
+            else {
+                alert("Wrong!")
+            }
+        // end for-loop
+        }
+
+        // Alert userScore and have message that depends on score
+
+        // Choose message based on score
+        if (userScore <= 5) {
+            message = "Do you even watch this show?"
+        }
+        else if (userScore <= 8) {
+            message = "You might need to watch it again."
+        }
+        else {
+            message = "You're a GOT expert! Maybe you should go outside."
+        }
+
+        // Alert the message
+        alert("You got " + userScore + " out of " + gotQuizKey.length + ". " + message)
+
+    </script>
+</body>
+</html>

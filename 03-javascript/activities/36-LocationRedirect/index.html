@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//Define Variables
+var userOS
+var geoLocation
+
+
+//Define Functions
+    //function checkUserOS --> check window.navigator.platform to determine user window OS and returns "Windows" or "Mac" to userOS.  If userOS = 'Windows" message ELSE mac message.
+function checkUserOS () {
+    var userOSsub = window.navigator.platform.substring(0,3); 
+    if (userOSsub === "Win") {
+        userOS = "Windows"
+    }
+    else if (userOSsub === "Mac") {
+        userOS = "Mac"   
+    }
+    else {
+        userOS = "unknown OS"
+    }
+}
+
+    //check geolocation
+    //if geolocation is ---- then return "West" to geoLocation ELSE return "East" to geoLocation
+function findLocation () {
+
+}
+
+    //Run Functions
+checkUserOS ()
+alert ("Welcome, " + userOS + " user!")
+
+    </script>
+    
+</body>
+</html>
