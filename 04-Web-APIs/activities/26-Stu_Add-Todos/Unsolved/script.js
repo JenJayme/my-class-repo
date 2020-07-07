@@ -5,6 +5,14 @@ var todoCountSpan = document.querySelector("#todo-count");
 
 var todos = ["Learn HTML", "Learn CSS", "Learn JavaScript"];
 
+
+
+document.querySelector('#txtSearch').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    todos.push("input.value")
+  }
+});
+
 renderTodos();
 
 function renderTodos() {
@@ -21,3 +29,4 @@ function renderTodos() {
     todoList.appendChild(li);
   }
 }
+

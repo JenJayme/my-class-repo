@@ -4,7 +4,12 @@ var todoList = document.querySelector("#todo-list");
 var todoCountSpan = document.querySelector("#todo-count");
 
 var todos = [];
+var storedTodos = JSON.parse(localStorage.getItem);
+if storedTodos === "" {
 
+var newTodos
+}
+//checkto see if there's anything in local storage for todos
 init();
 
 function renderTodos() {
@@ -25,14 +30,19 @@ function renderTodos() {
 function init() {
   // Write code here to check if there are todos in localStorage
   // If so, parse the value from localStorage and assign it to the todos variable
+console.log(localStorage);
+if (localStorage.getItem("toDoItem")) {
+  todos = JSON.parse(localStorage)
+}
 
-  // Store updated todos in localStorage, re-render the list
-  storeTodos();
-  renderTodos();
+renderTodos();
+
+// Store updated todos in localStorage, re-render the list
 }
 
 function storeTodos() {
   // Add code here to stringify the todos array and save it to the "todos" key in localStorage
+
 }
 
 // When form is submitted...

@@ -29,6 +29,7 @@
 
     // 1. Create code that "grabs" the div with the matching id (#drink-options);
     // ...
+    var drinks = document.querySelector("#drink-options")
 
 
     // ...
@@ -38,8 +39,28 @@
     // HINT: You will need to use each of the following methods: createElement, textContent, appendChild
     // ...
 
+    var ul = document.createElement("ul");
+      drinks.appendChild(ul);
+
+    // for (var i = 0; i < drinkList.length; i++) {
+    //   var li = document.createElement("li");
+    //   li.textContent = drinkList[i];
+    //   ul.appendChild(li);
+    // }
 
     // 3. ...
+
+    // foreach (var i = 0; i < drinkList.length; i++) {
+    //   var li = document.createElement("li");
+    //   li.textContent = drinkList[i];
+    //   ul.appendChild(li);
+    // }
+    
+    drinkList.forEach(function(item) {
+      var li = document.createElement("li");
+      li.textContent = item;
+      ul.appendChild(li);
+    })
 
   </script>
 
