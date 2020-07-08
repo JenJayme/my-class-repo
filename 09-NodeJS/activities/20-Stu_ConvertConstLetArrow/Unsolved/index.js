@@ -1,10 +1,10 @@
-var $root = document.querySelector("#root");
+const $root = document.querySelector("#root");
 
-var score;
-var targetScore;
+let score;
+let targetScore;
 
-var makeGuess = function() {
-  var $score = document.querySelector("#root p");
+const makeGuess = function() {
+  const $score = document.querySelector("#root p");
   $score.textContent = "Score: " + score + " | " + "Target: " + targetScore;
 
   if (score > targetScore) {
@@ -16,12 +16,15 @@ var makeGuess = function() {
   }
 };
 
-var Crystal = function(color) {
+//constructor function
+const Crystal = function(color) {
+  //don't use fat arrow here
   this.element = document.createElement("div");
   this.element.className = "crystal " + color;
   this.value = 0;
 
   this.element.addEventListener(
+    //fat arrow can be used here
     "click",
     function() {
       score += this.value;
@@ -38,13 +41,15 @@ Crystal.prototype.render = function(target) {
 
 var crystals = [new Crystal("red"), new Crystal("blue"), new Crystal("green")];
 
-var playRound = function() {
+const playRound = function() {
+  //can use fat arrow here
   var fragment = document.createDocumentFragment();
   var $score = document.createElement("p");
   targetScore = Math.floor(Math.random() * 50) + 25;
   score = 0;
   $score.textContent = "Score: " + score + " | " + "Target: " + targetScore;
   crystals
+  //fat arrow can be used here
     .sort(function() {
       return 0.5 - Math.random();
     })

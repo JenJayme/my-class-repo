@@ -5,8 +5,6 @@ In this activity, you will build a simple command line application that accepts 
 
 ## Instructions
 
-* Initialize your repository and install the `inquirer` dependency.
-
     * Is there another dependency you will need? 
 
 * Prompt your user with the following questions:

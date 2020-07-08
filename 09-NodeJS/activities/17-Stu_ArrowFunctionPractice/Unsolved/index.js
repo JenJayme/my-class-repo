@@ -1,12 +1,21 @@
 // 1. funnyCase makes each letter in a string the opposite case as the one before
-var funnyCase = function(string) {
-  var newString = "";
-  for (var i = 0; i < string.length; i++) {
-    if (i % 2 === 0) newString += string[i].toLowerCase();
-    else newString += string[i].toUpperCase();
-  }
-  return newString;
-};
+// var funnyCase = function(string) {
+//   var newString = "";
+//   for (var i = 0; i < string.length; i++) {
+//     if (i % 2 === 0) newString += string[i].toLowerCase();
+//     else newString += string[i].toUpperCase();
+//   }
+//   return newString;
+// };
+
+//replacement with fat arrow
+funnyCase = (string) => "Hello World!";
+
+// example for sytax
+// hello = () => "Hello World!";
+
+
+//C:\Users\floje\OneDrive\Desktop\codecamp\my-class-repo\my-class-repo\09-NodeJS\activities\17-Stu_ArrowFunctionPractice\Unsolved\index.js
 
 // Prints `yOu cAn't jUsT Do wHaTeVeR YoU WaNt aLl tHe tImE!`
 console.log(funnyCase("You can't just do whatever you want all the time!"));
