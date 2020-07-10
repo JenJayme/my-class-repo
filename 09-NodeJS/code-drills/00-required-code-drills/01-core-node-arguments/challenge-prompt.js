@@ -7,7 +7,7 @@
 
 // ---------- code starts here ----------
 
-
+console.log("Hello World");
 
 
 
@@ -19,10 +19,15 @@
 
 // ---------- code starts here ---------- 
 
+console.log(process.argv);
 
+//from online exercise 
+var myArgs = process.argv.slice(2);
+console.log('My args: ' + myArgs);
+console.log('My args 2: ' + process.argv.slice(2));
 
-
-
+//just practicing
+var fs = require('fs')
 
 // ---------- code ends here ---------- 
 
@@ -33,9 +38,11 @@
 
 // ---------- code starts here ---------- 
 
+console.log(process.argv[2]);
+console.log(process.argv[3]);
 
-
-
+var arg1 = process.argv[2];
+var arg2 = process.argv[3];
 
 
 // ---------- code ends here ---------- 
@@ -48,8 +55,23 @@
 
 // ---------- code starts here ---------- 
 
+function Gru(com1, com2) {
+var com1 = process.argv[2];
+var com2 = process.argv[3];
 
+if (com1 == 'minion' && com2 == 'army') {
+    console.log("I have found Gru");
+}
 
+else if (com1 == 'minion' && com2 !== 'army') {
+    console.log("Still looking for Gru.")
+}
+else {
+    console.log("Minion RAGE!")
+}
+}
+
+Gru();
 
 
 
