@@ -1,0 +1,15 @@
+{
+  "name": "04-Stu_Weather-Admin",
+  "version": "1.0.0",
+  "description": "In this activity you will create a CLI based weather application that will give updates about the weather at the searched location.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.27.0"
+  }npm
+}

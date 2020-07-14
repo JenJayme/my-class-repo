@@ -16,5 +16,5 @@ if (loginType === "admin") {
   myAdmin.getData();
 }
 else if {
-  myAdmin.newUserSearch(userName, userLocation);
-}
+  myAdmin.newUserSearch(userName, userLocation)
+};

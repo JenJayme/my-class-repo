@@ -27,12 +27,17 @@ async function getUserInformation() {
         message: "What's your github URL?",
         name: "name"
       });
-      console.log(data);
-    
+
+      console.log("Name :" + name);
+      console.log("githubURL :" + githubURL);
+
     } catch (err) {
       console.log(err);
     }
   }
+
+  //     const repoNames = res.data.map(function(repo) {
+//       return repo.
 
   getUserInformation();
 
