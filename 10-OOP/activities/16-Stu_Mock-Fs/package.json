@@ -1,0 +1,16 @@
+{
+  "name": "16-Stu_Mock-Fs",
+  "version": "1.0.0",
+  "description": "In this activity you will write code to mock and spy on the `fs` module to ensure its called when expected with the correct arguments.",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^26.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
