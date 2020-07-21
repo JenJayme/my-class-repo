@@ -1,0 +1,17 @@
+{
+  "name": "17-Stu-Prototype-Review",
+  "version": "1.0.0",
+  "description": "In this activity we will update the TV constructor function to be able to search the TV Maze API for a given actor's name.",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^26.1.0",
+    "loader": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

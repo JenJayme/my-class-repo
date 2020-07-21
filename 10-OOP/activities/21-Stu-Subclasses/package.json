@@ -1,0 +1,12 @@
+{
+  "name": "21-Stu-Subclasses",
+  "version": "1.0.0",
+  "description": "In this activity we will extend basic vehicle classes with additional functionality.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

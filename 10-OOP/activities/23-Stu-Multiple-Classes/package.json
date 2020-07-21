@@ -1,0 +1,12 @@
+{
+  "name": "23-Stu-Multiple-Classes",
+  "version": "1.0.0",
+  "description": "In this activity we will create a store class that allows us to handle different interactions within the store. We will use multiple classes with differing purposes to practice the OOP paradigm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
