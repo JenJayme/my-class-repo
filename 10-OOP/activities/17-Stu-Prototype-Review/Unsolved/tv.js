@@ -5,6 +5,7 @@ const fs = require("fs");
 const TV = function() {};
 
 // Find a tv show actor
+<<<<<<< HEAD
 TV.prototype.findActor = function(actor) {
   const URL = "http://api.tvmaze.com/singlesearch/shows?q=" + actor;
 
@@ -34,6 +35,8 @@ TV.prototype.findActor = function(actor) {
 };
 
 
+=======
+>>>>>>> bfeb6c781343385724b1c63835df1b581ffee84a
 
 // Find a tv show
 TV.prototype.findShow = function(show) {
