@@ -8,10 +8,14 @@
 module.exports = function(sequelize, DataTypes) {
   var Todo = sequelize.define("Todo", {
     text: DataTypes.STRING,
+<<<<<<< HEAD
     complete: DataTypes.BOOLEAN,
     validate: {
       notNull: true
     }
+=======
+    complete: DataTypes.BOOLEAN
+>>>>>>> ba21d6bb2f6501ae523f53157e141ce645b08f58
   });
   return Todo;
 };

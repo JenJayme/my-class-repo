@@ -2,5 +2,8 @@
 DROP DATABASE IF EXISTS todolist;
 -- Creates the "todolist" database --
 CREATE DATABASE todolist;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ba21d6bb2f6501ae523f53157e141ce645b08f58

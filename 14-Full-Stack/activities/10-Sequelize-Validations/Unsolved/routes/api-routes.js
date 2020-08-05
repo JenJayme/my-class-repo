@@ -26,7 +26,10 @@ module.exports = function(app) {
     // create takes an argument of an object describing the item we want to insert
     // into our table. In this case we just we pass in an object with a text and
     // complete property
+<<<<<<< HEAD
     // var isValid = validate(req.body.text); //not needed should auto run
+=======
+>>>>>>> ba21d6bb2f6501ae523f53157e141ce645b08f58
     db.Todo.create({
       text: req.body.text,
       complete: req.body.complete

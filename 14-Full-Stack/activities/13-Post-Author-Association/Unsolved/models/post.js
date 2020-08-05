@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 var Author = require("./author")
 
+=======
+>>>>>>> ba21d6bb2f6501ae523f53157e141ce645b08f58
 module.exports = function(sequelize, DataTypes) {
   var Post = sequelize.define("Post", {
     title: {
@@ -13,6 +16,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT,
       allowNull: false,
       len: [1]
+<<<<<<< HEAD
     },
   });
 
@@ -22,5 +26,12 @@ module.exports = function(sequelize, DataTypes) {
 
   // Example: https://github.com/sequelize/express-example/blob/master/models/task.js
 
+=======
+    }
+  });
+
+  // Add a belongsTo association to Authors here
+  // Example: https://github.com/sequelize/express-example/blob/master/models/task.js
+>>>>>>> ba21d6bb2f6501ae523f53157e141ce645b08f58
   return Post;
 };

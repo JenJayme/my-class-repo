@@ -14,7 +14,11 @@
   "dependencies": {
     "express": "^4.16.3",
     "mysql2": "^1.6.4",
+<<<<<<< HEAD
     "sequelize": "^4.44.4",
     "validator": "^13.1.1"
+=======
+    "sequelize": "^4.41.2"
+>>>>>>> ba21d6bb2f6501ae523f53157e141ce645b08f58
   }
 }

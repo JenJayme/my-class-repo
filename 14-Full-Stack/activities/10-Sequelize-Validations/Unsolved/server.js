@@ -5,7 +5,10 @@
 // *** Dependencies
 // =============================================================
 var express = require("express");
+<<<<<<< HEAD
 var validator = require("validator");
+=======
+>>>>>>> ba21d6bb2f6501ae523f53157e141ce645b08f58
 
 // Sets up the Express App
 // =============================================================
